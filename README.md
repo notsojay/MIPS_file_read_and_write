@@ -23,7 +23,7 @@ III. The file won't exceed 300 bytes, i.e. you don't need to worry about out of 
 IV. The default values in data_buffer were all 0.
 
 Arguments and Given parameters:
->> $a0: the address of the string that represents the input file name, "lab3_pts.dat".
+>> $a0: the address of the string that represents the input file name
 >> $a1: the base address of an integer array that will be used to store distances
 >> data_buffer: the buffer that you use to hold data for file read/write (MAXIMUM: 300 bytes)
 
@@ -41,7 +41,7 @@ NOTE: you can safely assume
 I. The distances to save are guaranteed positive/valid, e.g. N=4, the first four numbers in the array must be positive.
 
 Arguments and Given parameters:
->> $a0: the address of the string that represents the output file name, "lab3_dist.dat".
+>> $a0: the address of the string that represents the output file name
 >> $a1: the base address of an integer array that stores distances
 >> $a2: the number of distances to save from an integer array
 >> data_buffer: the buffer that you use to hold data for file read/write (MAXIMUM: 300 bytes)
