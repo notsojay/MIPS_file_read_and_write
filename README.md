@@ -31,3 +31,18 @@ Arguments and Given parameters:
 Complete save_dist_list function that saves N distances' values into a file
 For example:
 <img width="463" alt="截屏2023-03-14 04 40 43" src="https://user-images.githubusercontent.com/71242774/224990376-864406b3-6e1f-4a54-82e0-5c069b80580c.png">
+Note: the NEWLINE character (at the end of every line) is not visible.
+
+The above example shows that save_dist_list function takes 4 distances from the distance array, converts integers into ASCII characters, as a result of "1 <NEWLINE> 1 <NEWLINE> 7 <NEWLINE> 2 3 <NEWLINE>" in the data_buffer, then makes syscall to write 9 characters from this string into lab3_dist.dat file.
+
+Thought before starting to code: How to convert 23 into '2', '3'? other examples, 123 -> '1', '2', '3'?
+
+NOTE: you can safely assume
+I. The distances to save are guaranteed positive/valid, e.g. N=4, the first four numbers in the array must be positive.
+
+Arguments and Given parameters:
+>> $a0: the address of the string that represents the output file name, "lab3_dist.dat".
+>> $a1: the base address of an integer array that stores distances
+>> $a2: the number of distances to save from an integer array
+>> data_buffer: the buffer that you use to hold data for file read/write (MAXIMUM: 300 bytes)
+
